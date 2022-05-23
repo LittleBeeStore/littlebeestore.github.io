@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.spacer {
+    width: 40px;
+    height: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*============HEADER=============*/
+header {
+    background-color: rgb(20, 20, 20);
+    padding-top: 3rem;
+}
+
+#logo {
+    width: 100px;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+    margin-bottom: 2rem;
+}
+
+.headerIcons {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.headerIcons i {
+    padding: 1rem
+}
+
+.websiteName {
+    font-size: 40px;
+}
+
+.navbarWrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+#nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.category {
+    padding: 1rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #BCAC1F;
+}
+
+
+
+
+/*============VIDEO=============*/
+.video-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-wrapper img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video {
+    width: 100%;
+}
+
+
+
+/*============PRODUCTS SECTION=============*/
+.productsSection {
+    padding-top: 2rem;
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.try {
+    width: 80%;
+
+}
+
+.grid__categories grid__categories--advanced {
+    display: none;
+}
+
+.productsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "prod1 prod2 prod3"
+        "prod4 prod5 prod6";
+    gap: 0%;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.productsSectionTitle {
+    font-size: 40px;
+    margin-top: 5rem;
+}
+
+.product div {
+    padding-bottom: 1rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.productName {
+    font-size: 20px;
+}
+
+.productBuy button {
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.productBuy button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.productPrice {
+    font-size: 17px;
+}
+
+.productImage img {
+    width: 300px;
+}
+
+#prod1 {
+    grid-area: prod1;
+}
+
+#prod2 {
+    grid-area: prod2;
+}
+
+#prod3 {
+    grid-area: prod3;
+}
+
+#prod4 {
+    grid-area: prod4;
+}
+
+#prod5 {
+    grid-area: prod5;
+}
+
+#prod6 {
+    grid-area: prod6;
+}
+
+
+/*============IMAGE=============*/
+.imageWrapper {
+    width: 100%;
+    height: 700px;
+    background-image: url("images/image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.imageWrapper::before {
+    content: "THE LITTLE BEE STORE";
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+
+}
+
+
+
+/*============CATEGORIES=============*/
+.a {
+    background-color: rgb(20, 20, 20);
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+}
+
+.storeCategory {
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+}
+
+.categories {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "storage lighting"
+        "camping recovery ";
+    margin-top: 3rem;
+}
+
+.categoryWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.categoryWrapper:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#camping {
+    grid-area: camping;
+    position: relative;
+}
+
+#lighting {
+    grid-area: lighting;
+}
+
+#storage {
+    grid-area: storage;
+}
+
+#recovery {
+    grid-area: recovery;
+}
+
+
+/*============FOOTER=============*/
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+}
+
+.footerTitle {
+    color: white;
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.copyrightText {
+    color: grey;
+    font-size: 10px;
+}
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 2rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.finalContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finalContact div {
+    padding: 0 2rem;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.contactDetails div {
+    margin-bottom: 1.5rem;
+}
+
+.contactDetails i {
+    margin-bottom: 1.5rem;
+}
+
+.contactD {
+    display: flex;
+    align-items: center;
+}
+
+.Form {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-areas:
+        "Name Email"
+        "Message Message"
+        "Send Send";
+}
+
+#Name {
+    grid-area: Name;
+    padding: 1rem 2rem;
+    width: 80%;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+#Name:focus {
+    outline: none;
+    border: #BCAC1F 2px solid;
+}
+
+#Email {
+    grid-area: Email;
+    padding: 1rem 2rem;
+    width: 80%;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+#Email:focus {
+    outline: none;
+    border: #BCAC1F 2px solid;
+}
+
+#Message {
+    grid-area: Message;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    width: 90%;
+    resize: none;
+    height: 100px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+#Message:focus {
+    outline: none;
+    border: solid #BCAC1F 2px;
+}
+
+#Button {
+    margin-top: 2rem;
+    grid-area: Send;
+    border: none;
+    padding: 1rem 1.5rem;
+    width: 30%;
+    margin-bottom: 3rem;
+    background-color: #BCAC1F;
+    font-size: 20px;
+    font-family: Caudex;
+    color: white;
+}
+
+#Button:hover {
+    filter: opacity(0.5);
+}
+
+
+
+
+
+@media (max-width:450px) {
+    .websiteName {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .headerIcons {
+        font-size: 15px;
+    }
+
+    .video-Wrapper {
+        width: 90%;
+        margin-bottom: 10px;
+
+    }
+
+    .spacer {
+        width: 10px;
+    }
+
+    .Form {
+        grid-template-areas:
+            "Name"
+            "Email"
+            "Message"
+            "Send";
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .finalContact {
+        flex-direction: column;
+    }
+
+    .finalContact div {
+        padding: 0;
+    }
+
+    .video-wrapper {
+        height: auto;
+    }
+
+    .video-wrapper img {
+        width: 200px;
+    }
+
+    #Button {
+        font-size: 10px;
+        padding: 0.7rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .contactDetails {
+        font-size: 20px;
+    }
+
+    #Name {
+        padding: 0.5rem 1rem;
+    }
+
+    #Email {
+        padding: 0.5rem 1rem;
+    }
+
+    #Message {
+        margin: 0;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+
+}
